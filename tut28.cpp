@@ -23,7 +23,7 @@ complex sumcomplex(complex o1,complex o2){
     return o3;
 }
 int main(){
-    complex c1,c2,c3,sum;
+    complex c1,c2,sum;
     c1.setData(1,4);
     c1.printnumber();
     c2.setData(5,8);
