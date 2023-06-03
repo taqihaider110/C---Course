@@ -20,7 +20,7 @@ public:
 };
 int employee::count;//Default value is 0
 int main(){
-    employee taqi,wasi,asad;
+    employee taqi,wasi,asad,abbas;
     taqi.setdata();
     taqi.getdata();
     employee::getcount();
@@ -29,6 +29,9 @@ int main(){
     employee::getcount();
     asad.setdata();
     asad.getdata();
+    employee::getcount();
+    abbas.setdata();
+    abbas.getdata();
     employee::getcount();
     return 0;
 }
