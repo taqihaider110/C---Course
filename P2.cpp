@@ -5,9 +5,9 @@
 using namespace std;
 class Student{
     private:
+    string name;
     int roll_no;
     string phone_no;
-    string name;
     public:
     Student(string nm,int rn,string pn):name(nm),roll_no(rn),phone_no(pn){}
     void display(){
