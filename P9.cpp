@@ -6,7 +6,7 @@
 // John        1999        26B- WallsStreat
 #include<iostream>
 using namespace std;
-static int count=1;
+// static int count=1;
 class Employee{
     string name,yearofjoining,address;
     double salary;
