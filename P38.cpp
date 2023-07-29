@@ -28,7 +28,7 @@ class Copier : public Scanner, public Printer
 {
 public:
     Copier(int scanner, int printer, int power) : PoweredDevice(power),
-                                                  Scanner(scanner, power), Printer(printer, power) {}
+      Scanner(scanner, power), Printer(printer, power) {}
 };
 int main()
 {
