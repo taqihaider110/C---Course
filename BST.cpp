@@ -26,10 +26,28 @@ void In_Order(Node *root){
     if(root==NULL){
         return ;
     }
+    // At first traverse left subtree then visit the root and then traverse the right subtree.
     In_Order(root->left);
     cout<<root->data<<" ";
     In_Order(root->right);
-
+}
+void Pre_Order(Node *root){
+    if(root==NULL){
+        return ;
+    }
+    // At first visit the root then traverse left subtree and then traverse the right subtree.
+    cout<<root->data<<" ";
+    In_Order(root->left);
+    In_Order(root->right);
+}
+void Post_Order(Node *root){
+    if(root==NULL){
+        return ;
+    }
+    // At first traverse left subtree then traverse the right subtree and then visit the root.
+    In_Order(root->left);
+    In_Order(root->right);
+    cout<<root->data<<" ";
 }
 int main(){
     Node *root=NULL;
@@ -40,6 +58,17 @@ int main(){
     InsertBST(root,9);
     InsertBST(root,11);
     InsertBST(root,16);
+    
+    cout<<"In-Order Traversal:";
     In_Order(root);
     cout<<endl;
+    
+    cout<<"Pre-Order Traversal:";
+    Pre_Order(root);
+    cout<<endl;
+    
+    cout<<"Post-Order Traversal:";
+    Post_Order(root);
+    cout<<endl;
+    
 }
