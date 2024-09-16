@@ -1,4 +1,5 @@
 #include<stdio.h>
+using namespace std;
 int main(){
     int n,i,fact=1;
     printf("Enter the number to find its factorial\n");
